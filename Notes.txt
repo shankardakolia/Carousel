@@ -1,0 +1,23 @@
+To fix ViewProptypes will be removed... 
+
+Install the Package:
+In your terminal, navigate to your project directory and run the following command to install
+ the deprecated-react-native-prop-types package:
+
+ npm install deprecated-react-native-prop-types
+
+
+Update Imports:
+Open the following files from node_modules/react-native-snap-carousel:
+Carousel.js
+Pagination.js
+PaginationDot.js
+ParallaxImage.js
+
+Remove import { ViewPropTypes } from 'react-native';
+
+and insert 
+
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
+
+from the 4 files above
